@@ -1,0 +1,395 @@
+/* sm screen */
+@media screen and (min-width:640px) {
+    .navbar {
+        padding-inline: 120px;
+    }
+
+    .container-fluid {
+        max-width: 40rem;
+    }
+
+    .head-nav::after {
+        border: none !important;
+    }
+
+}
+
+/* md screen */
+@media screen and (min-width:768px) {
+    .container-fluid {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-fluid {
+        max-width: 48rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .nav-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background: white;
+        padding-block: 16px 0 !important;
+        margin-top: 0 !important;
+        gap: 8px;
+    }
+
+    .nav-item:not(:last-child) .head-nav {
+        margin-block-end: 8px !important;
+    }
+
+
+    .nav-links {
+        padding-inline: 0;
+        border-top: 1px rgb(231, 231, 231) solid;
+    }
+
+    .head-nav {
+        padding-inline: 16px !important;
+        padding-block: 12px !important;
+        border-radius: 8px;
+    }
+
+    .head-nav:hover {
+        padding-inline: 16px !important;
+        padding-block: 12px !important;
+        border-radius: 8px;
+        background-color: #F5F3FF;
+    }
+
+    .nav-item:has(svg) {
+        justify-content: space-between;
+    }
+
+    .parent-1 {
+        max-width: 720px;
+        padding-block-start: 80px !important;
+    }
+
+    .f-form-dot {
+        left: -6% !important;
+    }
+
+    .parent-1 h1 {
+        font-size: 48px !important;
+        color: white;
+        line-height: 60px !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container-fluid {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+
+    .container-fluid .nav-links {
+        margin-block-start: 0 !important;
+        padding-block: 16px !important;
+    }
+
+    .head-nav {
+        padding: 0 !important;
+    }
+
+    .head-nav-item:not(:last-child) {
+        margin-inline-end: 32px !important;
+    }
+
+    .navbar-nav .head-nav.active , .properties.active {
+        font-weight: 700 !important;
+    }
+
+    .navbar-expand-xl {
+        flex-wrap: nowrap;
+        justify-content: flex-start
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-xl .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto
+    }
+
+    .navbar-expand-xl .navbar-toggler {
+        display: none
+    }
+
+    .head-nav::after {
+        border: none;
+        background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+        content: "";
+        margin-inline-start: 0 !important;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 2px !important;
+        position: absolute;
+        transition: width 0.3s ease;
+    }
+
+    .head-nav:hover::after {
+        width: 100%;
+    }
+
+    .head-nav.active::after {
+        width: 100%;
+    }
+
+    .nav-links {
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+    .nav-item {
+    margin-inline-end: 0 !important;
+}
+
+/* GRID SYSTEM LG ROW AND COLUMN INSTEAD OF 992PX IN BOOTSTRAP  */
+/* GRID SYSTEM LG ROW AND COLUMN INSTEAD OF 992PX IN BOOTSTRAP  */
+    .col-lg {
+        flex: 1 0 0
+    }
+
+    .row-cols-lg-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-lg-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-lg-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-lg-3>* {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .row-cols-lg-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-lg-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-lg-6>* {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-lg-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-lg-0 {
+        margin-left: 0
+    }
+
+    .offset-lg-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-lg-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-lg-3 {
+        margin-left: 25%
+    }
+
+    .offset-lg-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-lg-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-lg-6 {
+        margin-left: 50%
+    }
+
+    .offset-lg-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-lg-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-lg-9 {
+        margin-left: 75%
+    }
+
+    .offset-lg-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-lg-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-lg-0,
+    .gx-lg-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-lg-0,
+    .gy-lg-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-lg-1,
+    .gx-lg-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-lg-1,
+    .gy-lg-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-lg-2,
+    .gx-lg-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-lg-2,
+    .gy-lg-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-lg-3,
+    .gx-lg-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-lg-3,
+    .gy-lg-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-lg-4,
+    .gx-lg-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-lg-4,
+    .gy-lg-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-lg-5,
+    .gx-lg-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-lg-5,
+    .gy-lg-5 {
+        --bs-gutter-y: 3rem
+    }
+/* GRID SYSTEM LG ROW AND COLUMN INSTEAD OF 992PX IN BOOTSTRAP  */
+/* GRID SYSTEM LG ROW AND COLUMN INSTEAD OF 992PX IN BOOTSTRAP  */
+.navbar-nav .dropdown-menu {
+    min-width: 1200px;
+    
+}
+
+}
+
+/* xl screen */
+@media screen and (min-width:1280px) {
+    .container-fluid {
+        max-width: 96rem;
+    }
+    
+}
+
+/* 2xl screen */
+@media screen and (min-width:1536px) {
+    .container-fluid {
+        max-width: 96rem;
+    }
+}
